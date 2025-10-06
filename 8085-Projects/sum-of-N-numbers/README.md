@@ -4,7 +4,7 @@
 This 8085 Assembly Language Program calculates the **sum of N one-byte numbers** stored consecutively in memory.  
 - The count `N` is stored at memory location `F100H`.  
 - The numbers are stored starting from `F101H`.  
-- The 16-bit result is stored at memory locations `8000H` (high byte) and `8001H` (low byte).
+- The 16-bit result is stored at memory locations `8000H` (low  byte) and `8001H` (high byte).
 
 ---
 
@@ -34,8 +34,8 @@ This 8085 Assembly Language Program calculates the **sum of N one-byte numbers**
    - Move HL to the next memory location.  
 4. Repeat until all `N` numbers are added.  
 5. Store the result:  
-   - Low byte → `8001H`  
-   - High byte → `8000H`  
+   - Low byte → `8000H`  
+   - High byte → `8001H`  
 
 ---
 
